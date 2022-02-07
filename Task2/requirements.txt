@@ -6,3 +6,4 @@ pdf2image
 os
 cv2
 pytesseract
+poppler
