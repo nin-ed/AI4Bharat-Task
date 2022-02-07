@@ -35,7 +35,7 @@ In this section, the function takes six arguments - <br/>
       f. **columns                -** True/False. It enables/disables the mode to consider the columns used in the PDF.<br/>
 
 
-First we iterate on the files. Upon iterating once we encounter images, we process the images. Then, we convert the images to grayscale and apply threshold so that we can see the writings clearly. Then, we pass this to image_to_string of pytesseract with configurations. There are two configurations/ modes on how we can read the data from the images - <br/>
+First we iterate on the files. Upon iterating, once we encounter images, we process them. Then, we convert the images to grayscale and apply threshold so that we can see the writings clearly. Then, we pass this to image_to_string of pytesseract with configurations. There are two configurations/ modes on how we can read the data from the images - <br/>
     a. **--psm 6** is to read from leftmost to rightmost. It doesn't care about the columns.<br/>
     b. **--psm 3** is to read the data when the contents are divided into columns. It reads data columnwise in this mode.<br/>
 
