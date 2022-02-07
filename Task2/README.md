@@ -54,7 +54,7 @@ The script is divided into 5 sections -
 
 ## How to run the code?
 1. Download **Tesseract-OCR** and **poppler**, and set TESSDATA_PREFIX in the environment variables to the path to **tessdata** directory present in the folder named as **Tesseract-OCR**.
-2. Assign the path to the variables left blank in the code. It has been denoted with comments like *# ADD PATH*.
+2. Assign the path to the variables left blank in the code. It has been denoted with comments like *# ADD PATH* in the script.
 3. Download the required libraries by running following command in terminal - 
       > pip3 install -r requirements.txt
 
