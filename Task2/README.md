@@ -51,8 +51,9 @@ In this section, the list of dictionaries is stored into a JSON file named as **
 
 ## How to run the code?
 1. Download **Tesseract-OCR** and **poppler**, and set TESSDATA_PREFIX in the environment variables to the path to **tessdata** directory present in the folder named as **Tesseract-OCR**.
-2. Download the required libraries by running following command in terminal - 
+2. Assign the path to the variables left blank in the code. It will be denoted with comments like *# ADD PATH*.
+3. Download the required libraries by running following command in terminal - 
       > pip3 install -r requirements.txt
 
-3. Now run the **main** or simply type the follwing command in the terminal - 
+4. Now run the **main** or simply type the follwing command in the terminal - 
       > python pdf_extractor.py 
