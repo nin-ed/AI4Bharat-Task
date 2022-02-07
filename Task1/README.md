@@ -7,6 +7,8 @@ This directory named as **"Task1"** consists of two files -
 3. **requirements.txt -** File containing necessary libraries to be installed to run the above mentioned script.
 
 
+
+
 The whole script is broken down into three sections - 
 1. **Wiki Fetch -** It fetches the title of the pages, by taking keyword and number of urls needed, as input and passing it through wikipedia API which in return, returns the list of titles of the pages according our requirements.
 2. **Scrapping Data -** The list is passed to this section to further processing. It takes each title one by one, and fetches the content of the data using Beautiful Soup. Because we just need the textual data from the pages, we visit the "paragraph" tags and fetch its contents. Further, the contents are cleaned by removing escape characters and special symbols. After cleaning, we create a list of dictionaries and returned.
