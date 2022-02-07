@@ -8,3 +8,4 @@ cv2
 pytesseract
 poppler
 pillow
+json
