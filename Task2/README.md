@@ -31,18 +31,18 @@ In this section, first you need to pass the path of the **Downloaded_pdfs** fold
 
 **4. PROCESSING IMAGES**
 
-In this section, the function takes six arguments - <br>/
-    **a. list_of_pdf_links -** List that was extracted in section 1.<br/>
-    **b. path_to_pdf_images_dir -** Path to the directory **PDF_Images**.<br/>
-    **c. path_to_tesseract_exe -** Path to the tesseract.exe<br/>
-    **d. path_to_tessdata -** Path to a directory named as **tessdata**. It is present inside the Tesseract-OCR directory.<br/>
-    **e. language -** Language being used in the data or language that you would want the tesseract to operate on.<br/>
-    **f. columns -** True/False. It enables/disables the mode to consider the columns used in the PDF.<br/>
+In this section, the function takes six arguments - <br/>
+      **a. list_of_pdf_links -** List that was extracted in section 1.<br/>
+      **b. path_to_pdf_images_dir -** Path to the directory **PDF_Images**.<br/>
+      **c. path_to_tesseract_exe -** Path to the tesseract.exe<br/>
+      **d. path_to_tessdata -** Path to a directory named as **tessdata**. It is present inside the Tesseract-OCR directory.<br/>
+      **e. language -** Language being used in the data or language that you would want the tesseract to operate on.<br/>
+      **f. columns -** True/False. It enables/disables the mode to consider the columns used in the PDF.<br/>
 
 
-First we iterate on the files. Upon iterating once we encounter images, we process the images. Then, we convert the images to grayscale and apply threshold so that we can see the writings clearly. Then, we pass this to image_to_string of pytesseract with configurations. There are two configurations/ modes on how we can read the data from the images - 
-    a. **--psm 6** is to read to leftmost to rightmost. It doesn't care about the columns.
-    b. **--psm 3** is to read the data when the contents are divided into columns. It reads data columnwise in this mode.
+First we iterate on the files. Upon iterating once we encounter images, we process the images. Then, we convert the images to grayscale and apply threshold so that we can see the writings clearly. Then, we pass this to image_to_string of pytesseract with configurations. There are two configurations/ modes on how we can read the data from the images - <br/>
+    a. **--psm 6** is to read to leftmost to rightmost. It doesn't care about the columns.<br/>
+    b. **--psm 3** is to read the data when the contents are divided into columns. It reads data columnwise in this mode.<br/>
 
 Then the text received is processed again to clean it.
 
