@@ -37,9 +37,9 @@ The script is divided into 5 sections -
 
       First we iterate on the files. Upon iterating, once we encounter images, we process them. Then, we convert the images to grayscale and apply threshold so that we can see the writings clearly. Then, we pass this to image_to_string of pytesseract with configurations. There are two configurations/ modes on how we can read the data from the images - <br/>
       - **--psm 6** is to read from leftmost to rightmost. It doesn't care about the columns.<br/>
-      - **--psm 3** is to read the data when the contents are divided into columns. It reads data columnwise in this mode.<br/>
+      - **--psm 3** is to read the data when the contents are divided into column paragraphs. It reads data columnwise in this mode.<br/>
 
-      So, here I have **--psm 3** to read the data columnwise first. The text received is processed again to clean it.
+      So, here I have used **--psm 3** to read the data column-wise first. The text received is processed again to clean it.
 
       Now after this, it starts appending **pdf-urls**, **page-urls**, and **page-content** to a dictionary, which is further appended into a list named as **json_content**. The function returns this list of dictionaries.
 
