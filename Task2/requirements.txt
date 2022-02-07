@@ -7,3 +7,4 @@ os
 cv2
 pytesseract
 poppler
+pillow
