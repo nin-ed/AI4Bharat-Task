@@ -23,5 +23,6 @@ A sample script ran to produce the results stored in file **out.json** can be re
       > pip3 install -r requirements.txt
 2. Now run the following command:
       > python wiki_extractor.py --keyword=<Your query enclosed in double quotes> --num_urls=<Integer value of number of urls needed> --output=<Name of the output file enclosed in double quotes>
+    
       In this mentioned case it would be -
       > python wiki_extractor.py --keyword="Indian historical events" --num_urls=100 --output="out.json"
