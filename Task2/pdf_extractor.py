@@ -85,13 +85,14 @@ def process_pdf_images(list_of_pdf_links, path_to_pdf_images_dir, path_to_tesser
         files = os.listdir(sub_dir)
         files.sort(key=lambda x: int(x[4:-4]))
 
-        j, c = 0, 0
+        j, c, f = 0, 0, 0
         for file in files:
             img_path = sub_dir + "\\" + file
             img = cv2.imread(img_path)
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
-            tmp_file = f"{os.getpid()}.png"
+            tmp_file = f"{f}.png"
+            f += 1
             cv2.imwrite(tmp_file, thresh)
             text = pytesseract.image_to_string(Image.open(tmp_file), lang=language, config=tessdata_config)
             os.remove(tmp_file)
