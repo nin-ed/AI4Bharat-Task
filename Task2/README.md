@@ -39,7 +39,7 @@ First we iterate on the files. Upon iterating, once we encounter images, we proc
     a. **--psm 6** is to read from leftmost to rightmost. It doesn't care about the columns.<br/>
     b. **--psm 3** is to read the data when the contents are divided into columns. It reads data columnwise in this mode.<br/>
 
-Then the text received is processed again to clean it.
+So, here I have **--psm 3** to read the data columnwise first. The text received is processed again to clean it.
 
 Now after this, it starts appending **pdf-urls**, **page-urls**, and **page-content** to a dictionary, which is further appended into a list named as **json_content**. The function returns this list of dictionaries.
 
