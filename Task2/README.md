@@ -23,6 +23,8 @@ The script is divided into 5 sections -
 
 3. **CONVERTING PDF PAGES INTO IMAGES**<br/>
       In this section, first you need to pass the path of the **Downloaded_pdfs** folder and path to the poppler bin folder to the function. In this section, a new directory naming **PDF_Images** is created which stores the pictures of each page with respect to pdfs. 
+      
+      > **Note:** *Section 2 and 3 can be merged into one function without the need of downloading and storing pdfs*
 
 
 4. **PROCESSING IMAGES**<br/>
