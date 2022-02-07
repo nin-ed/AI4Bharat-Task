@@ -58,5 +58,11 @@ The script is divided into 5 sections -
 3. Download the required libraries by running following command in terminal - 
       > pip3 install -r requirements.txt
 
-4. Now run the **main** or simply type the follwing command in the terminal - 
+4. Now run the **main** or simply type the following command in the terminal - 
       > python pdf_extractor.py 
+
+&nbsp;
+
+## Result
+After execution of ***pdf_extractor.py*** has finished, you will see a JSON file saved into the main directory ***Task2*** (given that you have downloaded this entire folder)
+named as ***pdf_extract.json***. It contains all the scrapped data with each dictionary object having three attributes - ***pdf-url***, ***page-url***, and ***pdf-content***. 
