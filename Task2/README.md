@@ -14,11 +14,10 @@ This repository contains following files -
 The script is divided into 5 sections - 
 
 
-**1. READING DATA FROM EXCEL FILE**
-
+**1. READING DATA FROM EXCEL FILE**<br/>
 In this section, data from the excel sheet is retrieved with the help of pandas. It returns a list of pdf file links.
 
-
+<br/>
 **2. FETCHING CONTENTS FROM LINKS AND STORING**
 
 In this section, pdf files are retrieved using urlretrieve. For those whose direct links weren't available, in that, I have used Beautiful Soup to search for the pdf file links in the page. Once encountered, I use urlretrieve to download that file. All these pdfs will be downloaded into a new directory named as **Downloaded_pdfs**.
