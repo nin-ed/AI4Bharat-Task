@@ -3,7 +3,7 @@
 ## What is it?
 In this task, we need to extract data from multiple pdf files mentioned in an excel sheet.
 
-This repository there are following files - 
+This repository contains following files - 
 1. **pdf_extractor.py -** Python script to extract pdf data.
 2. **pdf_extract.json -** Extracted JSON file
 3. **requirements.txt -** File containing the libraries required to run the script
