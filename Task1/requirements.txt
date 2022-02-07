@@ -1,0 +1,6 @@
+requests
+wikipedia
+bs4
+json
+argparse
+re
