@@ -8,6 +8,7 @@ This repository contains following files -
 2. **pdf_extract.json -** Extracted JSON file
 3. **requirements.txt -** File containing the libraries required to run the script
 
+&nbsp;
 
 ## How does it work?
 The script is divided into 5 sections - 
