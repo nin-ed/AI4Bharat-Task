@@ -18,7 +18,7 @@ The script is divided into 5 sections -
 In this section, data from the excel sheet is retrieved with the help of pandas. It returns a list of pdf file links.
 
 **2. FETCHING CONTENTS FROM LINKS AND STORING**<br/>
-In this section, pdf files are retrieved using urlretrieve. For those whose direct links weren't available, in that, I have used Beautiful Soup to search for the pdf file links in the page. Once encountered, I use urlretrieve to download that file. All these pdfs will be downloaded into a new directory named as **Downloaded_pdfs**.
+In this section, pdf files are retrieved using urlretrieve. For those whose direct links weren't available, in that, I have used Beautiful Soup to search for the pdf file links in the webpage. Once encountered, I use urlretrieve to download that file. All these pdfs will be downloaded into a new directory named as **Downloaded_pdfs**.
 
 
 **3. CONVERTING PDF PAGES INTO IMAGES**<br/>
