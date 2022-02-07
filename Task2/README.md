@@ -14,19 +14,19 @@ This repository contains following files -
 The script is divided into 5 sections - 
 
 
-**1. READING DATA FROM EXCEL FILE**<br/>
-In this section, data from the excel sheet is retrieved with the help of pandas. It returns a list of pdf file links.
+1. **READING DATA FROM EXCEL FILE**<br/>
+      In this section, data from the excel sheet is retrieved with the help of pandas. It returns a list of pdf file links.
 
-**2. FETCHING CONTENTS FROM LINKS AND STORING**<br/>
-In this section, pdf files are retrieved using urlretrieve. For those whose direct links weren't available, in that, I have used Beautiful Soup to search for the pdf file links in the webpage. Once encountered, I use urlretrieve to download that file. All these pdfs will be downloaded into a new directory named as **Downloaded_pdfs**.
-
-
-**3. CONVERTING PDF PAGES INTO IMAGES**<br/>
-In this section, first you need to pass the path of the **Downloaded_pdfs** folder and path to the poppler bin folder to the function. In this section, a new directory naming **PDF_Images** is created which stores the pictures of each page with respect to pdfs. 
+2. **FETCHING CONTENTS FROM LINKS AND STORING**<br/>
+      In this section, pdf files are retrieved using urlretrieve. For those whose direct links weren't available, in that, I have used Beautiful Soup to search for the pdf file links in the webpage. Once encountered, I use urlretrieve to download that file. All these pdfs will be downloaded into a new directory named as **Downloaded_pdfs**.
 
 
-**4. PROCESSING IMAGES**<br/>
-In this section, the function takes six arguments - <br/>
+3. **CONVERTING PDF PAGES INTO IMAGES**<br/>
+      In this section, first you need to pass the path of the **Downloaded_pdfs** folder and path to the poppler bin folder to the function. In this section, a new directory naming **PDF_Images** is created which stores the pictures of each page with respect to pdfs. 
+
+
+4. **PROCESSING IMAGES**<br/>
+      In this section, the function takes six arguments - <br/>
 - **list_of_pdf_links      -** List that was extracted in section 1.<br/>
 - **path_to_pdf_images_dir -** Path to the directory **PDF_Images**.<br/>
 - **path_to_tesseract_exe  -** Path to the tesseract.exe<br/>
@@ -44,8 +44,8 @@ So, here I have **--psm 3** to read the data columnwise first. The text received
 Now after this, it starts appending **pdf-urls**, **page-urls**, and **page-content** to a dictionary, which is further appended into a list named as **json_content**. The function returns this list of dictionaries.
 
 
-**5. PREPARING JSON FILE**<br/>
-In this section, the list of dictionaries is stored into a JSON file named as **pdf_extract.json** present in this directory.
+5. **PREPARING JSON FILE**<br/>
+      In this section, the list of dictionaries is stored into a JSON file named as **pdf_extract.json** present in this directory.
 
 &nbsp;
 
